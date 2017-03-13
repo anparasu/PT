@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Botanics</title>
+    <link href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./dist/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="pull-left">
+                <a href="./index.html"><img src="./images/botanics-logo.png" alt="Botanics"></a>
+            </div>
+            <div class="pull-right">
+                <a href=""><span class="glyphicon glyphicon-search"></span></a>
+                <a href="./basket.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="itemCount">0</span></a>
+            </div>
+        </div>
+    </header>
+    <section class="clearedBasket">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h3>Your basket is empty.</h3>
+                    <p><a href="./index.html">Add some products</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="loader">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <img src="./images/spin.gif" width="50" height="50">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="basket">
+        <div class="container">
+            <div class="row item">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                    <b>Description</b>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <b>Quantity</b>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                    <b>Price</b>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                    <b>Total Price</b>
+                </div>
+            </div>
+            <div class="result">
+                <div class="row loader">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <img src="./images/spin.gif" width="50" height="50">
+                    </div>
+                </div>
+            </div>
+            <div class="row total">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 text-right">
+                    <b>Total Price</b>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 totalPrice">
+                </div>
+            </div>
+            <div class="row checkoutButContainer">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <a href="" class="button checkoutBut" id="clearBasket">Clear Basket</a>
+                    <a data-url="" class="button checkoutBut" id="CheckoutBut">Checkout in new window</a>
+                    <a data-url="" class="button checkoutBut" id="CheckoutBut1">Checkout in same window</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="sm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="./images/spin.gif" width="50" height="50">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Custom javascript file created for botanics-->
+    <script type="text/javascript" src="./lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./dist/js/botanics.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+header {
+    .container {
+        padding: 10px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #777;
+        .pull-right {
+            a {
+                margin-left: 20px;
+                line-height: 58px;
+                color: $botanics-primary-color;
+                position: relative;
+                span.itemCount {
+                    border-radius: 50%;
+                    background: green;
+                    color: #fff;
+                    font-size: 11px;
+                    padding: 15px 3px;
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    line-height: 0;
+                    text-align: center;
+                }
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .pull-left {
+            img {
+                width: 249px;
+                height: 58px;
+            }
+        }
+    }
+}

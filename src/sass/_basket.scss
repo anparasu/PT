@@ -1,0 +1,40 @@
+section.basket {
+    padding: 25px 0;
+    .total {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    .item {
+        padding: 10px 0;
+        border-bottom: 1px dashed #f5f5f5;
+        .qtnCtrls {
+            display: block;
+            margin-bottom: 15px;
+            input {
+                text-align: center;
+            }
+        }
+    }
+    .item:first-child {
+        border-bottom: 1px dashed #ddd;
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+    .checkoutBut {
+        background: green;
+        border-radius: 3px;
+        color: white;
+        padding: 10px;
+        margin: 25px;
+    }
+    .row.checkoutButContainer {
+        padding: 25px 0;
+        clear: both;
+    }
+}
+
+section.loader {
+    padding: 25px;
+}

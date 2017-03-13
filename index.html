@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Botanics</title>
+    <link href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./dist/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="pull-left">
+                <a href="./index.html"><img src="./images/botanics-logo.png" alt="Botanics"></a>
+            </div>
+            <div class="pull-right">
+                <a href=""><span class="glyphicon glyphicon-search"></span></a>
+                <a href="./basket.html"><span class="glyphicon glyphicon-shopping-cart"></span><span class="itemCount">0</span></a>
+            </div>
+        </div>
+    </header>
+    <section class="productDetail">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 prdImg">
+                    <img src="" alt="Botanics Product" height="400" id="prdThumbnail">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 prdDesc">
+                    <p>Category</p>
+                    <h1 id="prdTitle">Product Title</h1>
+                    <p id="prdDescp">Lorem ipsum dolor sit amet, quo ea falli libris inimicus, iisque eruditi corrumpit eam ad. Brute ponderum no vix. Tota viderer consequuntur at eos, est ei diceret utroque, ex nam clita antiopam.</p>
+                    <p id="prdPrice">£14.50</p>
+                    <div class="addtoBasketSection">
+                        <button onClick="basketFn.decrementItemCount()" id="decrBut">-</button>
+                        <input type="text" placeholder="0" max="99" min="0" size="3" maxlength="2" value="0" id="itemCount" onkeypress="basketFn.valItemCount(this)">
+                        <button onClick="basketFn.incrementItemCount()" id="incrBut">+</button>
+                        <button class="addToBasketBut" data-modelname="">Add to basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Custom javascript file created for botanics-->
+    <script type="text/javascript" src="./lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./dist/js/botanics.js"></script>
+</body>
+
+</html>
