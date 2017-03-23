@@ -9975,6 +9975,7 @@ function valItemCount(elm) {
 function decrementItemCount() {
     if (isNumber(document.getElementById("itemCount").value)) {
         var itemCount = parseInt(document.getElementById("itemCount").value);
+        //console.log(itemCount + " " + typeof itemCount);
         var decCount = itemCount - 1;
         if (decCount <= 0) {
             document.getElementById("decrBut").disabled = true;
@@ -10116,8 +10117,9 @@ $(document).ready(function () {
                 var inArr = $(this).data("inarr");
                 var itemId = "#itemCount" + inArr;
                 var getQtn = $(itemId).val();
-                var setQtn = parseInt(getQtn) - 1;
-                if (setQtn >= 1) {
+                var setQtn = "";
+                if (getQtn >= 2) {
+                    setQtn = parseInt(getQtn) - 1;
                     $(itemId).val(setQtn);
                     $(this).disabled = false;
                 } else {
@@ -10226,7 +10228,7 @@ $(document).ready(function () {
         if (!isNumber(val)) {
             alert("Please input only number");
             return false;
-        } else if (val <= 1 || val === "") {
+        } else if (val <= 0 || val === "") {
             alert("Minimum Quantity should be 1");
             return false;
         } else {
@@ -10235,6 +10237,7 @@ $(document).ready(function () {
     }
 
     function postUpdateData(modal, quantity) {
+        //console.log("11111111111111");
         var items = [{ "ModelName": String(modal), "Quantity": String(quantity) }];
         var getCart = "";
         var cartReqUrl = "https://rgci-data.where-to-buy.co/rgci/v1/cart";
@@ -10250,6 +10253,7 @@ $(document).ready(function () {
             if (response.Success) {
                 $(".addToBasketBut").disabled = false;
                 $(".checkoutBut").disabled = false;
+                //console.log("22222222222222");
             }
         });
     }
